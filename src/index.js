@@ -6,6 +6,7 @@ import {Provider} from 'react-redux'
 import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
 
+// Reducer
 const addDataReducer = (state=[], action)=>{
     if(action.type === 'ADD_DATA'){
         return [...state, acation.payload]
@@ -16,6 +17,7 @@ const addDataReducer = (state=[], action)=>{
     return state
 }
 
+// Store
 const storeInstance = createStore(
     combineReducers({
         addDataReducer
