@@ -1,9 +1,17 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
 
 const Understanding = () => {
+    // ready to use useNavigate, useNavigate setup
+    const navigate = useNavigate()
+     // click handler button function will navigate to its destination
+    const onClickHandler = () => {
+        navigate("/support")
+    }
+
     return (
         <div>
-            "I am Understanding"
+            <button onClick={onClickHandler}>Next</button>
         </div>
     )
 }
