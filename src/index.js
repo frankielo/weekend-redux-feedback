@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 // Reducer
 const addDataReducer = (state=[], action)=>{
     if(action.type === 'ADD_DATA'){
-        return [...state, acation.payload]
+        return [...state, action.payload]
     }
     else if(action.type === 'CLEAR_REDUCER'){
         return []
